@@ -1,0 +1,55 @@
+﻿Iokepa Lapera
+9/13/18
+CSCI 3731
+
+
+Homework #3
+
+
+1. What is wrong with the following code and how would you fix it?
+                Int min;
+                For (int i =0; i< 10; ++i) {
+                        Int value;
+                        scanf(“%d”, &value);
+                        If (i=0) min = value
+                        Else if (value<min) min = value;
+                }
+                printf(“the smallest or the 10 values you entered was %d\n”, min);
+
+
+        A1: What is wrong with this code is that value is out of scope, so the int in value would not transfer outside the loop.  To fix this, initialize value outside of the loop, under min.
+
+
+2.What is wrong with the following code and how would you fix it?
+                int* pointerToMax(int a, int b){
+                        if(a>b) return &a;
+                        if(b>a) return &b;
+                }
+
+
+        A2:  What’s wrong with this code is that the inputs for the method should be addresses.  To fix this, make int a and int b into int* a, and int* b, and have a normal return without &.
+
+
+3.What is wrong with the following code and how would you fix it?
+                int* ptr=NULL;
+                scanf(“%d”, ptr);
+                printf(“you entered %d”, ptr);
+                }
+
+
+A3: What’s wrong with this code is that the ptr is not dereferenced in the printf.  To fix this, change ptr to *ptr.
+
+
+4.        a) int* a                 - a pointer to a
+           b) const int b                - const int b
+        c) const int* c                -pointer to const int
+        d) int* cont d                - const pointer to an int
+        e) const int* const e        - const pointer to a const int
+
+
+5. What is the difference between * and &?
+* returns a pointer to a value while & would dereference a pointer to get the value
+
+
+6.What is the difference between const int* a and int* const a?
+        Const int* a is a const pointer to an int while int* const a is a pointer to a const int.  Whatever is const will not change.

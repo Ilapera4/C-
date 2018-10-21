@@ -1,0 +1,72 @@
+﻿Iokepa Lapera
+9/19/18
+Dr. Pier
+
+
+Homework 4
+
+
+
+
+        1.  What is wrong with the following code, and how to fix it?
+                
+                void swap(int* a, int* b ) {
+                    int* tmp = a;
+                    a = b;
+                    b = tmp;
+                }
+
+
+        A:  This code is missing the dereference variables are in the wrong place in the method.  The correct way of writing this code would be: 
+                Int tmp = *a;
+                a* = b*;
+                b* = tmp;
+
+
+        
+        2. What is wrong with the following code, and how to fix it?
+
+
+                char copy[8};
+                Const char* string = “hello”;
+                for(int i = 0; string[i] !=’\0’; ++i) {
+                    Copy[i] = string[i];
+                }
+                printf(“%s\n”, copy);
+
+
+        A: There is still unused space in the copy array which are not initialized, so when this array is printed, it will print something random after the initial “hello” that it copied from the string array.  To fix this, you can change the size of the copy array.
+
+
+        3. How would you pass a sub-array containing only the third through sixth elements of a to the function f?
+
+
+        A: To pass the sub-array, you would call it like this: 
+                f(a+3, 3);
+        This makes sure that the array starts from a[3] and ending at a[6].
+
+
+        4. What is wrong with the following code, and how to fix it?
+
+
+                double* allocateArray(int length) {
+                        Double array[length];
+                        Return array;
+                {
+
+
+        A:  Because this function returns a pointer, the double array that is in this function needs to be double* array.
+
+
+        5.What is wrong with the following code, and how to fix it?
+
+
+                Char string[5];
+                String[0] = ‘h’;
+                String[1] = ‘e’;
+string[2] = 'l';
+          string[3] = 'l';
+          string[4] = 'o';
+
+
+A: Whats wrong with this code is that the length isn’t long enough.  It needs to be long enough to hold a \0 at the end of the array.  To fix this, all you have to do is change the size of the char string to 6.

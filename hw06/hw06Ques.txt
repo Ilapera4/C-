@@ -1,0 +1,15 @@
+﻿Iokepa Lapera
+10/3/18
+Professor Pier
+
+
+Homework 6
+
+
+
+
+1. What are libraries good for?
+   1. Libraries are good for reusing functions so that the one coding doesn’t have to keep rewriting the same functions for different codes
+1. What are the two types of libraries, and how are they different?
+   1. The two types of libraries are Static and Shared Object.  They are different because Shared libraries are .s files and are used at run-time, while Shared Libraries are .a files and are used at compile time.
+1. I made almost no progress with the code. I don’t fully understand how to use the PPM array to write JPEG.

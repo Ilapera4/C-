@@ -1,0 +1,38 @@
+﻿Iokepa Lapera
+9/27/18
+Dr. Pier
+HW05
+
+
+Homework 5 written Question
+
+
+                1. What is the problem with two-dimensional arrays in C/C++?
+        The problem with two-dimensional arrays in C/C++ is that methods need to know the dimensions of the arrays or it can’t compile, and with 2d arrays, you won’t be able to specify the dimensions at runtime
+
+
+                2. Describe 2 ways to work around C/C++’s problem with 2d arrays.
+        One way of getting around it would be to make a flat array, which basically lays the 2d array out row by row in one array.  The second way of getting around it would be to use the numerical recipes trick.  Which elaborates on the flat array.  It creates another array which acts as a pointer to each row in the flat array.
+
+
+                3. Does your computer run little endian or big endian?
+        My computer runs little endian.  I found this out by running the following code:
+
+
+#include <cstdio>
+
+
+int main(){
+        int i = 1;
+        
+        if(*(char *)&i ==1) {
+                printf("little endian\n");
+        } else{
+                printf("big endian");
+                
+        }
+        
+}
+
+
+                4.  I couldn't quite figure out how to code this

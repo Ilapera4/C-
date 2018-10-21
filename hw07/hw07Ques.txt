@@ -1,0 +1,61 @@
+﻿Iokepa Lapera
+10/17/18
+Professor Pier
+C++
+Homework 7
+
+
+1. What is wrong with the code and how would you fix it?
+        #ifndef PROJECTILE_H
+        #define PROJECTILE_H
+        Class Projectile {
+        private:
+                double position;
+                double speed;
+
+
+        public:
+                Projectile(double speed, double velocity);
+                virtual ~Projectile();
+
+
+                double getSpeed() const;
+                double getVelocity() cont;
+
+
+        }; //end of projectile class
+
+
+        What is wrong with this code is that it doesn’t have a semicolon after the closing curly bracket.  To fix this, add a semicolon to the end of the code before the comment.
+
+
+
+
+2. What is wrong with the following code and how to fix it?
+
+
+        Projectile(int speed, int velocity){
+                this.x = x;
+                this->x = x;
+                this.y = y;
+                this->y = y;
+        }
+
+
+        What is wrong with this code is that they are using the wrong “this” method.  It should be “this->x = x” which returns a pointer.
+
+
+3. Describe each:
+   1. int* method(int* arg): a method that takes an pointer as an argument and returns a pointer
+   2. Const int* method(int* arg): a method that takes a pointer as an argument and returns a const pointer
+   3. Const int* const method(int* arg): a const method that takes a pointer as an argument and returns a const pointer
+   4. Const int* const method(const int* arg): a const method that takes a const pointer as an argument  and returns a const pointer
+   5. Const int* const method(const int* arg) const:
+4. In what ways are C++ strings better that C strings and vice versa?
+        C++ strings are better in the way that they are much safer, and easier to use.  Also they support different string manipulation functions.  C strings are better than C++ strings in the way that C strings don’t limit you to C++, also C is a part of many common APIs.
+5. Difference between a pointer and a reference?
+        The difference is that a pointer can be NULL, while a reference cannot be NULL.  Another difference is that a reference is automatically dereferenced, and a pointer is not.
+6. What is a destructor used for?
+        The destructor is used to delete heap memory that has been allocated by the class
+7. Write an angle class...?
+		I was unable to completly understand how the overloading operators function, so I will study up on it somemore and try to complete this assignment.

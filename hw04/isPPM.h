@@ -1,0 +1,2 @@
+
+int isPPM(FILE* file);
