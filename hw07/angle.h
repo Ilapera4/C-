@@ -13,7 +13,8 @@ class Angle{
 		double getAng() const;
 		double add(double x, const double y); //x is the angle
 		//and checks at the same time
-		double sub(const double y)
-	
+		double sub(const double y);
+		double getsin(const double ang);
+		double getcos(const double ang);
 	
 };

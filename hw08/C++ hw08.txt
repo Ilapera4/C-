@@ -1,0 +1,21 @@
+﻿Iokepa Lapera
+10/23/18
+C++
+
+
+Homework 8
+
+
+1. What does the friend keyword do?
+   1. This keyword has the is able to access all private functions despite being defined outside of the class.
+1. Describe why you should never use using namespace std;?
+   1. It should never be used because it pulls the entire std namespace into the global namespaces which can lead to name collisions.
+1. Describe four ways to return an object from a method.
+   1. The first way is to return a reference to a const object  The second way is to return a constant reference to an object.  The third way is to return an object directly, and the last way is to return a constant object.
+1. What does the mutable keyword do?
+   1. The mutable keyword allows their variables to be changed even in const methods.
+1. What are the three ways a class can contain objects in C++?
+   1. The three ways a class can contain an object is as an actual object, a reference to an object, and as a pointer.
+1. What is a singleton?
+   1. A singleton is a class that is used when one and only one object of a type in system.
+1. I was unable to complete the code in time but intend to finish it.
