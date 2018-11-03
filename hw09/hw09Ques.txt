@@ -1,0 +1,21 @@
+Iokepa Lapera
+11/1/18
+Dr. Pier
+
+HW09
+
+1. The difference between upcasting and downcasting is that upcasting is going from an object to a supertype and downcasting
+is casting to a subtype.
+
+2. You would mark a method as virtual in order to override that method.  If you don't mark it as virtual, then others will not
+be able to override the method.
+
+3.The difference between dynamic and static cast is that static cast is at compile time while dynamic cast is at runtime.  You
+would use one over the other depending on what you are casting.  For example, you would use dynamic cast when you're casting from
+a base class to a derived class.
+
+4. You would use a const cast when something isn't going to be changed.
+
+5.The difference is that in the one with the const cast, the class Fruit isn't going to be changed by the method.
+
+6. In java there are interfaces while in C++, a class can inherit from more that one superclass.
