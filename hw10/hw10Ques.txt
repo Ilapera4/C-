@@ -1,0 +1,23 @@
+﻿Iokepa Lapera
+11/7/18
+C++
+Dr. Pier
+
+
+HW10
+
+
+
+
+
+
+1.The fundamental difference between how java and C++ implement collections is 
+
+
+2.The difference between a template and a class is that a class does not define a template, but a template can define a class.  A template is a class that has a generic definition with parameters that is not instantiated until the information is provided.  A class is a blueprint for an object.
+
+
+3. A Drawback of using templates is that the syntax is complex and the compiler generates extra code.
+
+
+4. An iterator is an object that enables a programmer to traverse a container, more commonly, lists.
