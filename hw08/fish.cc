@@ -47,12 +47,3 @@ void fish::swim(){
 	posx += speed * dir.getCos();
 	posy += speed * dir.getSin();
 }
-
-void drunkfish::swim(){
-	int choice = rand() % 4;
-	
-	if( choice == 0) posx += speed;
-	else if(choice == 1) posy += speed;
-	else if(choice == 2) posx -= speed;
-	else posy -= speed;
-}

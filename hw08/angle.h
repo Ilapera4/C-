@@ -4,18 +4,26 @@
 class angle{
 	
 	private:
-		double x; 
+		
 		
 	public:
+		double x; 
+		
+		angle();
 		angle(double x);		//Method
 		virtual ~angle();		//destructor
 		
-		double getAng() const;
-		const angle& operator+=(const angle& b); //x is the angle
-		//and checks at the same time
-		const angle& operator-=(const angle& b);
-		double getsin();
-		double getcos();
+		angle operator+(const angle& b)const;
+		angle operator-(const angle& b)const;
+		angle operator/(const angle& b)const;
+		void operator = (const angle &b);
+		bool operator == (const angle &b);
+		void operator += (const angle &b);
+		void operator -= (const angle &b);
+		
+		double getSin();
+		double getCos();
+		
 	
 };
 #endif

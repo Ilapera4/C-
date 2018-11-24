@@ -1,24 +1,12 @@
-#ifndef FISH_H
-#define FISH_H
-#include "angle.h"
-#include <cstdlib>
+#include "population.h"
+#include <vector>
 
-class fish{
+class population{
 		
 	public:
-	    fish();
-		fish(double x, double y, double s, angle dir, angle tr); /*posx, posy, speed, direction*/
-		virtual ~fish();
-	
-		double posx;
-		double posy;
-		double speed;
-		angle dir;
-		angle turn_rate;
+	    std::vector<fish()> list;
+		list.push_back();
 		
-		void swim();
-		fish& operator+=(const fish& rhs);
-		fish& operator-=(const fish& rhs);
 	
 };
 #endif

@@ -1,20 +1,23 @@
 #ifndef ANGLE_H
 #define ANGLE_H
 
-class Angle{
+class angle{
 	
 	private:
-		double x; 
+		
 		
 	public:
-		Angle(double x);		//Method
-		virtual ~Angle();		//destructor
+		double x; 
 		
-		double getAng() const;
-		double add(double x, const double y); //x is the angle
-		//and checks at the same time
-		double sub(const double y);
-		double getsin(const double ang);
-		double getcos(const double ang);
+		angle();
+		angle(double x);		//Method
+		virtual ~angle();		//destructor
+		
+		angle operator+(const angle& b)const;
+		angle operator-(const angle& b)const;
+		angle operator/(const angle& b)const;
+		void operator = (const angle &b);
+		bool operator == (const angle &b);
 	
 };
+#endif

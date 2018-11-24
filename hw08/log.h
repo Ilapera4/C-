@@ -5,11 +5,14 @@
 class log{
 	
 	private:
-		log();
+	
+		
 	
 	public:
+		log();
+		virtual ~log();
 		static const log& getInstance();
-		void logP(const std::string& msg);
+		void logP();
 	
 	
 };

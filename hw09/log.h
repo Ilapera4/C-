@@ -4,10 +4,15 @@
 
 class log{
 	
+	private:
+	
+		
+	
 	public:
 		log();
+		virtual ~log();
 		static const log& getInstance();
-		void logP(const std::string& msg);
+		void logP();
 	
 	
 };

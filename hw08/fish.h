@@ -29,11 +29,4 @@ class fish{
 	
 	
 };
-
-class drunkfish: public fish{
-	public:
-		void swim();
-	
-	
-};
 #endif

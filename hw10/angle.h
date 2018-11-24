@@ -1,6 +1,7 @@
 #ifndef ANGLE_H
 #define ANGLE_H
 
+template<class t> 
 class angle{
 		
 	public:
